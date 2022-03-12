@@ -13,7 +13,6 @@ function App() {
   const [time, setTime] = useState(0);
   const isStart = useRef(true);
   const active = useRef();
-
   const refInterval = useRef(0);
 
   const startTimer = () => {

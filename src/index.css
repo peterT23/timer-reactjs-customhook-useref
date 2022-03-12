@@ -1,48 +1,11 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 :root {
   --text-shadow-color: #ff9c99;
   --text-main-color: #d74742;
 }
-
-h1 {
-  color: var(--text-main-color);
-  font-family: "Rouge Script", cursive;
-  font-size: 130px;
-  font-weight: normal;
-  line-height: 48px;
-  margin: 0 0 50px;
-  text-align: center;
-  text-shadow: 1px 1px 2px var(--text-shadow-color);
-}
-
-h2 {
-  color: #a7e8f8;
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 32px;
-  margin: 0 0 24px;
-  text-shadow: 1px 1px 1px var(--text-shadow-color);
-}
-
-p {
-  color: #ffffff;
-  font-family: "Carme", sans-serif;
-  font-size: 16px;
-}
-
-a {
-  color: #cef0d4;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #a7e8f8;
-  text-decoration: underline;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -57,6 +20,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  color: var(--text-main-color);
+  font-family: "Rouge Script", cursive;
+  font-size: 130px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0 0 50px;
+  text-align: center;
+  text-shadow: 1px 1px 2px var(--text-shadow-color);
+}
+
+p {
+  color: #ffffff;
+  font-family: "Carme", sans-serif;
+  font-size: 16px;
 }
 
 .container {
@@ -111,3 +91,20 @@ code {
   border: 1px solid var(--text-main-color);
   background-color: var(--text-main-color);
 } */
+@media only screen and (max-device-width: 1280px) {
+  * {
+    font-size: 0.9em;
+  }
+  h1 {
+    font-size: 60px;
+    line-height: 0px;
+  }
+  .button__wrapper {
+    margin: auto;
+    width: 100%;
+  }
+  .timer__display > p {
+    font-size: 3.8em;
+    padding-left: 0;
+  }
+}
