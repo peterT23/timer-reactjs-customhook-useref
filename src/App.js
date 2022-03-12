@@ -33,6 +33,7 @@ function App() {
   const resetTimer = () => {
     setTime(0);
     clearInterval(refInterval.current);
+    active.current.disabled = true;
   };
 
   return (
