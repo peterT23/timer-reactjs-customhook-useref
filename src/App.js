@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const formatTime = (time) => {
   const getSeconds = `0${time % 60}`.slice(-2);
