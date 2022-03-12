@@ -1,39 +1,8 @@
-import { useRef, useState } from "react";
-
-const formatTime = (time) => {
-  const getSeconds = `0${time % 60}`.slice(-2);
-  const minutes = `${Math.floor(time / 60)}`;
-  const getMinutes = `0${minutes % 60}`.slice(-2);
-  const getHours = `0${Math.floor(time / 3600)}`.slice(-2);
-
-  return `${getHours} : ${getMinutes} : ${getSeconds}`;
-};
+import { formatTime } from "./formatTime";
+import useTimer from "./useTimer";
 
 function App() {
-  const [time, setTime] = useState(0);
-  const isStart = useRef(true);
-  const active = useRef();
-  const refInterval = useRef(0);
-
-  const startTimer = () => {
-    active.current.disabled = true;
-    isStart.current = true;
-    refInterval.current = setInterval(() => {
-      if (isStart.current) {
-        setTime((time) => time + 1);
-      }
-    }, 1000);
-  };
-  const stopTimer = () => {
-    isStart.current = false;
-    clearInterval(refInterval.current);
-    active.current.disabled = false;
-  };
-  const resetTimer = () => {
-    setTime(0);
-    clearInterval(refInterval.current);
-    active.current.disabled = false;
-  };
+  const { time, startTimer, stopTimer, resetTimer, active } = useTimer(0);
 
   return (
     <div className="App container">
