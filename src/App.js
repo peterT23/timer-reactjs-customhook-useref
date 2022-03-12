@@ -1,4 +1,4 @@
-import { formatTime } from "./formatTime";
+import "Your code here";
 import useTimer from "./useTimer";
 
 function App() {
@@ -9,16 +9,20 @@ function App() {
       <h1>Coder Timer</h1>
       <div className="timer__wrapper">
         <div className="timer__display">
-          <p>{formatTime(time)}</p>
+          <p>{"Your code here"}</p>
         </div>
         <div className="button__wrapper">
-          <button className="button" onClick={stopTimer}>
+          <button className="button" onClick={"Your code here"}>
             Stop
           </button>
-          <button className="button" ref={active} onClick={startTimer}>
+          <button
+            className="button"
+            ref={"Your code here"}
+            onClick={"Your code here"}
+          >
             Start
           </button>
-          <button className="button" onClick={resetTimer}>
+          <button className="button" onClick={"Your code here"}>
             Reset
           </button>
         </div>
