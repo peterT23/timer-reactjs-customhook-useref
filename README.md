@@ -6,7 +6,7 @@ id: cs-virgil-2.2-react-eco
 
 # React Timer
 
-:timer_clock: _Building a timer using create-react-app._
+:timer*clock: \_Building a timer using create-react-app.*
 
 The purpose of this project is to practice our React hooks skills such as `useState` `useRef` and `Custom Hook`
 
@@ -27,7 +27,7 @@ Everyone know what a timer is eventhough not all timers look the same. Today, we
 
 ## Requirement
 
-Fork this [repo]("") and read through the files.
+Fork this [repo](https://github.com/coderschool/cs-react-timer-starter-code) and read through the files.
 Often time , developers are required to work with an existing codebase and improve upon. This is one of that time.
 
 You should only code in the designinated area.
