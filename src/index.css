@@ -1,6 +1,6 @@
 :root {
-  --text-shadow-color: #ff9c99;
-  --text-main-color: #d74742;
+  --text-shadow-color: #fefefe;
+  --text-main-color: #040404;
 }
 * {
   box-sizing: border-box;
@@ -24,7 +24,7 @@ code {
 
 h1 {
   color: var(--text-main-color);
-  font-family: "Rouge Script", cursive;
+  font-family: fantasy;
   font-size: 130px;
   font-weight: normal;
   line-height: 48px;
@@ -34,15 +34,15 @@ h1 {
 }
 
 p {
-  color: #ffffff;
+  color: #0c0c0c;
   font-family: "Carme", sans-serif;
   font-size: 16px;
 }
 
 .container {
-  margin: auto;
+  margin: 100px auto;
   max-width: 1048px;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +55,24 @@ p {
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 .timer__display {
-  padding-left: 1.5em;
+  padding: 1.5em;
+}
+.time-title {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin: auto;
+}
+.time-title span {
+  /* margin: 10px; */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: inline;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 100%;
+  padding: 10px;
+  /* margin: auto; */
 }
 .timer__display > p {
   font-size: 5em;
@@ -70,7 +87,7 @@ p {
 }
 .button {
   color: white;
-  background-color: var(--text-shadow-color);
+  background-color: rgb(252, 100, 100);
   font-size: 1.5em;
   border-radius: 100vh;
   border: 1px solid white;
@@ -86,6 +103,51 @@ p {
 }
 .button:disabled {
   background-color: rgb(170, 164, 164);
+}
+.display-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  color: rgb(0, 0, 0);
+  /* padding: 10px; */
+  /* margin-bottom: 10px; */
+  font-size: 1.6rem;
+}
+.display-history ol {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  background-color: #c4211b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  /* border: 2px solid white; */
+}
+.buttonbtn {
+  color: #ffffff;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  background-color: rgb(252, 100, 100);
+  width: 100%;
+
+  height: auto;
+  padding: 5px;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+.buttonbtn:hover {
+  box-shadow: 3px 1px red, 0.1em 0 0.4em rgb(86, 86, 85);
+}
+.display-history ol li {
+  font-size: 1.5rem;
+  color: white;
+  border-bottom: 2px solid white;
 }
 /* .button.active {
   border: 1px solid var(--text-main-color);
